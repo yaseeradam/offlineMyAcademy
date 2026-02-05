@@ -4,6 +4,7 @@ import 'package:smartlink/features/auth/role_selection_screen.dart';
 import 'package:smartlink/features/customer/cart_screen.dart';
 import 'package:smartlink/features/customer/customer_shell.dart';
 import 'package:smartlink/features/customer/explore_screen.dart';
+import 'package:smartlink/features/customer/address_screen.dart';
 import 'package:smartlink/features/customer/checkout_screen.dart';
 import 'package:smartlink/features/customer/home_screen.dart';
 import 'package:smartlink/features/customer/order_tracking_screen.dart';
@@ -110,6 +111,10 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: '/auth/verify',
       builder: (context, state) => const IdentityVerificationScreen(),
+    ),
+    GoRoute(
+      path: '/customer/addresses',
+      builder: (context, state) => const AddressScreen(),
     ),
   ],
 );
